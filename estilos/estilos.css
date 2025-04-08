@@ -1,17 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+*{ /* Selector de toda la pagina web*/ 
+    margin: 0; /* Elimina el margen por defecto de los elementos */
+    padding: 0; /* Elimina el relleno por defecto de los elementos */   
+    box-sizing: border-box; /* Cambia el modelo de caja para incluir el padding y el borde en el ancho y alto total del elemento */
+    -webkit-box-sizing: border-box; /* Para navegadores webkit como Chrome y Safari Y eDGE */
     -moz-box-sizing: border-box;
+
 }
 
-body{
+body{ 
     font-family: "Open Sans", sans-serif, Arial;
     font-size: 16px;
 }
 
-.contenedor{
+/* Define el contenedor principal con ancho adaptable y un máximo de 1000px. 
+   Centra el contenido con margin auto y oculta desbordes con overflow. 
+   El fondo es de color azul violeta. */
+   .contenedor {
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -19,39 +23,83 @@ body{
     background-color: blueviolet;
 }
 
-.titulo{
+/* Define un estilo para los títulos: alineación centrada y margen vertical de 20px. */
+.titulo {
     text-align: center;
     margin: 20px 0;
 }
 
-.descripcion{
+/* Estilo similar al de los títulos pero aplicado a las descripciones. */
+.descripcion {
     text-align: center;
     margin: 20px 0;
 }
 
-header{
+/* Configuración del header: ocupa el 100% de ancho, altura fija de 200px,
+   con imagen de fondo que cubre completamente. La posición es centrada y fija. */
+header {
     width: 100%;
-    background-color: color(rec2020 red green blue);
     height: 200px;
-
-
+    background: url(../img/portada.jpg);
+    background-size: cover;
+    background-attachment: center fixed;
+    background-position: center;
 }
-.menu{
+
+/* Estilo para el menú de navegación con ancho del 100% y un máximo de 1000px. 
+   Tiene altura fija de 50px, se centra horizontalmente y tiene fondo color aqua. */
+.menu {
     width: 100%;
-    text-align: center;
     height: 50px;
-    background-color: blueviolet;
-    
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    background-color: aqua;
+    overflow: hidden;
 }
-header .direccion{
+
+/* Estilo para el elemento direccion dentro del header con ancho y altura del 50%. */
+header .direccion {
     position: center;
     width: 50%;
     height: 50px;
-
-    
 }
-.inicio{
+
+/* Estilo para el elemento inicio con ancho del 50% pero contiene un error 
+   en la altura (debería ser 50px en lugar de 50x). */
+.inicio {
     position: left;
     width: 50%;
-    height: 50x;
+    height: 50px;
+}
+
+/* Configura la categoría con ancho del 100%, máximo de 1000px, centrado
+   y fondo color marrón. */
+.categoria {
+    width: 100%;
+    height: 50px;
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    background-color: brown;
+}
+
+/* Define el estilo para el elemento fruto con ancho del 50% y máximo de 500px. 
+   Tiene fondo azul claro. */
+.fruto {
+    width: 50%;
+    height: 50px;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+/* Configuración de los productos: fondo con imagen fija y que cubre completamente. */
+.productos {
+    background: url(../img/Vivero-Potosi-Organica-9.webp);
+    background-size: cover;
+    background-attachment: center fixed;
 }
