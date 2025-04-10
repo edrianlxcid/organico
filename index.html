@@ -1,331 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>Viveros Organicos</title>
 </head>
 <body>
-    <header><!-- Aqui va la seccion del menu de navegacion -->
-        <!-- Aqui va la seccion del menu de navegacion -->
-        <div class="contenedor">
-            <nav>
-                <table border="1" class ="menu">
-                    <tr>
-                        <td class="inicio">
-                            <a href="#">Inicio</a>
-                            <a href="#">Contacto</a>
-                            <a href="#">Nosotros</a>
-                        </td>
-                        <td>
-                            <p class="direccion">Direccion: Cabo Yepez y Sargento Yepez S8-91. Quito Ecuador</p>
-                        </td>    
-                    </tr>    
-                </table>
-            </nav>
-            <div class="titulo">
-             <h1>Viveros Organicos Carmelita </h1>
-                <p class="descripcion">Tienda Especializada eb ka venta de productos como Frutas, Tomates, lacteos y proteinas, Cereales 
-                y legumbres, bebidas.<br>
-                Ofrecemos una variedad de especies, asesorate con un experto, un lugar perfecto para tus compras del dai a dia.
-             </p>
-            </div>  
+    <header> <!--inicio del header donde se encuentra toda la cabezera de la pagina web-->      
+        <div class="contenedor"> <!--aqui va la clase contenedor para poder realizar modificaciones unicamente a las seciones menu, entrada,nombre,texto-->   
+            <div>
+                <nav class="menu"><!--parte inicial de nuestra web donde seran interactivos para acceder a partes de nuestra pagina web esto con estilos css-->
+                    <a href="#">Inicio</a>
+                    <a href="#">Sobre Nosotros</a>
+                    <a href="#">Servicios</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+            <div>   
+                <section class="entrada">
+                    <h1 class="nombre">Viveros Organicos Marcelita</h1>
+                    <h3 class="texto">Tu fuente de plantas y productos orgánicos.</h3>
+                </section>
+            </div>
+        </div>    
+    </header>
+    <!--fin del header-->
+    <!--Inicio del main, seccion donde se va la informacion relevante de nuestra pagina web-->
+    <main class="main">
+        <div class="menu">
+            <h2 class="articulo">Productos</h2>
+            <article> <!--toda la parte donde iran nuestros productos y precios-->
+                <h3 class="producto">Hortalizas</h3><!--titulo de nuestros procutos clasificados-->
+                <ul>
+                    <li class="nombre">Chocho: $2.50 - $3.00</li><!--nombre de cada producto con su precio-->
+                    <li class="nombre">Quinua: $0-80 - $1.20</li>
+                    <li class="nombre">Naranjilla: $1.00 - $1.50</li>
+                </ul>
+                <h3 class="producto">Frutas</h3>
+                <ul>
+                    <li class="nombre">Manzana: $0.50 - $1.00</li>
+                    <li class="nombre">Banano: $0.30 - $0.60</li>
+                    <li class="nombre">Pera: $0.80 - $1.20</li>
+                </ul> 
+                <h3 class="producto">Verduras</h3>
+                <ul>
+                    <li class="nombre">Lechuga: $0.50 - $1.00</li>
+                    <li class="nombre">Espinaca: $0.80 - $1.20</li>
+                    <li class="nombre">Brócoli: $1.00 - $1.50</li>
+                </ul>  
+            </article>       
         </div>
-    </header> <!-- Fin de la seccion del menu de navegacion -->
-    <!--Seccion de los productos que vamos a en listar en tablas-->
-  <section class="productos">  
-        <h2 class="menu">Productos</h2>
-        <div>
-            <h3 class="categoria">Alimentos frescos</h3>
-            <table border="1" class="fruto">
-                <caption>Frutas</caption>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                </tr>  
-                <tr>
-                    <td>Manzana</td>
-                    <td>0.50</td>
-                    <td>10</td>
-                </tr>  
-                <tr>
-                    <td>Platano</td>
-                    <td>0.30</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Fresas</td>
-                    <td>1.00 lb</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Arandanos</td>
-                    <td>1.50 lb.</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Uvas</td>
-                    <td>0.80 lb.</td>
-                    <td>8</td>
-                </tr>    
-            </table>  
-            <table border="1" class="fruto">
-                <caption>Verduras</caption>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                </tr>  
-                <tr>
-                    <td>Lechuga</td>
-                    <td>0.50</td>
-                    <td>10</td>
-                </tr>  
-                <tr>
-                    <td>Tomate</td>
-                    <td>0.30</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Cebolla</td>
-                    <td>1.00 lb</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Pimiento</td>
-                    <td>1.50 lb.</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Zanahoria</td>
-                    <td>0.80 lb.</td>
-                    <td>8</td>
-                </tr>   
-            </table>
-            <table border="1" class="fruto">
-                <caption>Hotalizas</caption>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                </tr>
-                <tr>
-                    <td>cebollas</td>
-                    <td>0.50</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>ajo</td>
-                    <td>0.30</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>papas</td>
-                    <td>1.00 lb</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>yuca</td>
-                    <td>1.50 lb.</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>espinaca</td>
-                    <td>0.80 lb.</td>
-                    <td>8</td>
-            </table>
-            <br>   
+        <div class="otros"><!-- seccion de otros, especifiocando que son otro tipos de productos en este caso de jardineria-->
+            <h2 class="articulo">Jardineria</h2>
+            <article>
+                <h3 class="producto">Herramientas</h3>
+                    <ul>
+                        <li class="nombre">Pala: $10.00</li>
+                        <li class="nombre">Rastrillo: $8.00</li>
+                        <li class="nombre">Tijeras de podar: $5.00</li>
+                    </ul>
+            </article>    
         </div>
-        <div>
-            <h3 class="categoria">Productos lacteos y proteinas</h3>
-            <table border="1" class="fruto">
-                <caption>Productos lacteos</caption>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                </tr>  
-                <tr>
-                    <td>Leche</td>
-                    <td>0.50</td>
-                    <td>10</td>
-                </tr>  
-                <tr>
-                    <td>Yogurt</td>
-                    <td>0.30</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Mantequilla</td>
-                    <td>1.00 lb</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Queso</td>
-                    <td>1.50 lb.</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Cream cheese</td>
-                    <td>0.80 lb.</td>
-                    <td>8</td>
-                </tr>
-            </table>
-            <table border="1" class="fruto">
-                <caption>Proteinas</caption>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                </tr>  
-                <tr>
-                    <td>Carne de res</td>
-                    <td>0.50</td>
-                    <td>10</td>
-                </tr>  
-                <tr>
-                    <td>Carne de cerdo</td>
-                    <td>0.30</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Pescado</td>
-                    <td>1.00 lb</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Pechuga de pollo</td>
-                    <td>1.50 lb.</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Salchichas</td>
-                    <td>0.80 lb.</td>
-                    <td>8</td>
-                </tr>
-            </table>
+    </main>
+    <!--fin del main-->
+    <!--Fin-->
+    <div class="info"> <!-- seccion de informacion para su manupulacion con las clases menu2, nosotros, servicios-->
+        <div class="menu2">
+            <section class="nosotros">
+                <h3>Sobre Nosotros</h3>
+                <p>En Viveros Organicos nos dedicamos a ofrecer productos de la más alta calidad.</p>
+            </section>
+
+            <section class="servicios">
+                <h3>Servicios</h3>
+                <p>Ofrecemos una variedad de servicios relacionados con el cuidado de plantas.</p>
+            </section>
         </div>
-        <div>
-            <h3 class="categoria">Cereales y legumbres</h3>
-            <table border="1" class="fruto">
-                <caption>Cereales</caption>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                </tr>  
-                <tr>
-                    <td>Arroz</td>
-                    <td>0.50</td>
-                    <td>10</td>
-                </tr>  
-                <tr>
-                    <td>Maiz</td>
-                    <td>0.30</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Avena</td>
-                    <td>1.00 lb</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Cebada</td>
-                    <td>1.50 lb.</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Quinoa</td>
-                    <td>0.80 lb.</td>
-                    <td>8</td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <h3 class="categoria">Bebidas</h3>
-            <table border="1" class="fruto">
-                <caption>Bebidas</caption>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                </tr>  
-                <tr>
-                    <td>Agua</td>
-                    <td>0.50</td>
-                    <td>10</td>
-                </tr>  
-                <tr>
-                    <td>Jugo de naranja</td>
-                    <td>0.30 1/2 lt</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Cerveza</td>
-                    <td>1.00 lt</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Vino</td>
-                    <td>1.50.</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Bebida energetica</td>
-                    <td>0.80 lb.</td>
-                    <td>8</td>
-                </tr> 
-            </table>
-        </div>
-        <h2 class="menu">Productos de jardineria</h2>
-        <div>
-            <h3 class="categoria">Macetas</h3>
-            <table border="1" class="fruto">
-                <caption>Macetas</caption>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Cantidad</th>
-                </tr>  
-                <tr>
-                    <td>Maceta de barro</td>
-                    <td>5.50</td>
-                    <td>10</td>
-                </tr>  
-                <tr>
-                    <td>Maceta de plastico</td>
-                    <td>4.50</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Maceta de ceramica</td>
-                    <td>6.25</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Maceta de metal</td>
-                    <td>6.</td>
-                    <td>5</td>
-                </tr>
-            </table>  
-        </div>
-        <br>
-        <div>
-            <h3>Chatea con Nosotros</h3>
-            <a href="#">Whatsapp</a>
-            <h3>Entregas a domicilio</h3>
-            <form action="">
-                <label for="">Ingrese Su Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                <label for="">Ingrese su contacto</label>
-                <input type="text" name="contacto" id="contacto" placeholder="Contacto" required>
-            </form>
-        </div>
-    </section>
+    </div>     
 </body>
 </html>

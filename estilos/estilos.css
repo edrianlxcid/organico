@@ -1,105 +1,256 @@
-*{ /* Selector de toda la pagina web*/ 
-    margin: 0; /* Elimina el margen por defecto de los elementos */
-    padding: 0; /* Elimina el relleno por defecto de los elementos */   
-    box-sizing: border-box; /* Cambia el modelo de caja para incluir el padding y el borde en el ancho y alto total del elemento */
-    -webkit-box-sizing: border-box; /* Para navegadores webkit como Chrome y Safari Y eDGE */
+*{
+    margin: 0; 
+    /*El margin en CSS es el espacio exterior que rodea un elemento, es decir, el espacio entre el borde del elemento 
+    y los demás elementos a su alrededor. Básicamente, se utiliza para crear separación entre elementos 
+    en una página web. margenes perzonalizados como "margin-top,right,bottom,left*/
+    padding: 0;
+    /*El padding en CSS es el espacio interior de un elemento, es decir, el espacio entre el contenido del elemento 
+    y su borde. Es útil para crear espacio dentro de un elemento sin cambiar su posición respecto a otros elementos. espacios
+    alrededor personzalizados padding-top,rigth-botoom-left*/
+    box-sizing: border-box;
+    /*El box-sizing en CSS es una propiedad que define cómo se calcula el ancho y alto de un elemento.
+    Por defecto, el ancho y alto de un elemento solo incluye el contenido, pero al usar border-box,
+    el ancho y alto incluyen el padding y el borde. Esto facilita el diseño de elementos, ya que
+    no es necesario hacer cálculos adicionales para ajustar el tamaño de un elemento.
+    Por ejemplo, si un elemento tiene un ancho de 200px y un padding de 20px, el ancho total será 240px
+    (200px + 20px + 20px). Con border-box, el ancho total seguirá siendo 200px, y el contenido se ajustará automáticamente.*/
     -moz-box-sizing: border-box;
-
+    /*El -moz-box-sizing es una propiedad CSS específica para navegadores Firefox que define cómo se calcula el ancho y alto de un elemento.
+    Al igual que box-sizing, permite incluir el padding y el borde en el cálculo del tamaño total del elemento.*/
+    -webkit-box-sizing: border-box;
+    /*El -webkit-box-sizing es una propiedad CSS específica para navegadores WebKit (como Safari y Chrome) que define cómo se calcula el ancho y alto de un elemento.
+    Al igual que box-sizing, permite incluir el padding y el borde en el cálculo del tamaño total del elemento.*/
 }
 
-body{ 
-    font-family: "Open Sans", sans-serif, Arial;
+body{
+    /*el font-family en CSS es una propiedad que define la fuente tipográfica utilizada para mostrar el texto en un elemento.
+    Permite especificar una o varias fuentes, y el navegador seleccionará la primera fuente disponible en el sistema del usuario.
+    Por ejemplo, si se establece font-family: Arial, sans-serif;, el navegador intentará usar la fuente Arial, y si no está disponible, usará una fuente sans-serif genérica.*/
+    font-family: "Mulish", sans-serif, Arial;
+    /*El font-size en CSS es una propiedad que define el tamaño del texto en un elemento.
+    Se puede especificar en diferentes unidades, como píxeles (px), em, rem, porcentajes, etc. Por ejemplo, font-size: 16px; establece el tamaño del texto en 16 píxeles.*/
     font-size: 16px;
+
 }
 
-/* Define el contenedor principal con ancho adaptable y un máximo de 1000px. 
-   Centra el contenido con margin auto y oculta desbordes con overflow. 
-   El fondo es de color azul violeta. */
-   .contenedor {
+.contenedor{
+    /*El width en CSS es una propiedad que define el ancho de un elemento.
+    Se puede especificar en diferentes unidades, como píxeles (px), porcentajes (%), em, rem, etc. Por ejemplo, width: 100%; establece el ancho del elemento al 100% de su contenedor padre.*/
     width: 90%;
+    /*el max-width en CSS es una propiedad que define el ancho máximo de un elemento.
+    Se utiliza para evitar que un elemento se expanda más allá de un cierto tamaño, incluso si su contenido lo requiere. Por ejemplo, max-width: 800px; 
+    establece que el ancho máximo del elemento será de 800 píxeles.*/
     max-width: 1000px;
+    /*El margin en CSS es una propiedad que define el espacio exterior de un elemento.
+    Se utiliza para crear separación entre el elemento y otros elementos en la página. Por ejemplo, margin: auto; centra un elemento horizontalmente dentro de su contenedor.*/
     margin: auto;
+    /*EL overflow en CSS es una propiedad que define cómo se comporta el contenido que desborda el área de un elemento.
+    Se puede establecer en valores como visible (el contenido desbordante es visible), hidden (el contenido desbordante se oculta), 
+    scroll (se agrega una barra de desplazamiento) o auto (se agrega una barra de desplazamiento solo si es necesario).*/
     overflow: hidden;
-    background-color: blueviolet;
 }
 
-/* Define un estilo para los títulos: alineación centrada y margen vertical de 20px. */
-.titulo {
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Estilo similar al de los títulos pero aplicado a las descripciones. */
-.descripcion {
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Configuración del header: ocupa el 100% de ancho, altura fija de 200px,
-   con imagen de fondo que cubre completamente. La posición es centrada y fija. */
 header {
     width: 100%;
-    height: 200px;
-    background: url(../img/portada.jpg);
+    /*El background en CSS es una propiedad que define el fondo de un elemento.
+    Se puede establecer en diferentes valores, como colores, imágenes, degradados, etc. Por ejemplo, background: red; establece el fondo del elemento en rojo.*/
+    background: linear-gradient(rgba(105, 179, 138, 0.5)), url('../img/fondo.jpg');
+    /*EL background-size en CSS es una propiedad que define cómo se ajusta una imagen de fondo dentro de un elemento.
+    Se puede establecer en valores como cover (la imagen cubre todo el elemento, manteniendo su proporción) o contain (la imagen se ajusta dentro del elemento, manteniendo su proporción).*/
     background-size: cover;
-    background-attachment: center fixed;
-    background-position: center;
+    /*EL backgropund-attachment en CSS es una propiedad que define cómo se comporta una imagen de fondo al desplazarse.
+    Se puede establecer en valores como fixed (la imagen de fondo permanece fija mientras se desplaza el contenido) o scroll (la imagen de fondo se desplaza con el contenido).*/
+    background-attachment: fixed;
+    /*El background-position en CSS es una propiedad que define la posición de una imagen de fondo dentro de un elemento.
+    Se puede establecer en valores como center (centra la imagen), top (coloca la imagen en la parte superior) o bottom (coloca la imagen en la parte inferior).*/
+    background-position: bottom;
 }
 
-/* Estilo para el menú de navegación con ancho del 100% y un máximo de 1000px. 
-   Tiene altura fija de 50px, se centra horizontalmente y tiene fondo color aqua. */
-.menu {
+header .contenedor{
+    /*El position en CSS es una propiedad que define cómo se posiciona un elemento en la página.
+    Se puede establecer en valores como static (posición normal), relative (posición relativa al flujo del documento), absolute (posición absoluta respecto al contenedor más cercano con posición relativa) o fixed (posición fija en la ventana del navegador).*/
+    position: relative;
+    /*EL height en CSS es una propiedad que define la altura de un elemento.
+    Se puede especificar en diferentes unidades, como píxeles (px), porcentajes (%), em, rem, etc. Por ejemplo, height: 100px; establece la altura del elemento en 100 píxeles.*/
+    height:550px; 
+}
+
+header .menu{
     width: 100%;
-    height: 50px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-    background-color: aqua;
-    overflow: hidden;
+    /* el texto-aling de esta seccion se alineara a las izquierda del header unicamente*/
+    text-align: left;
 }
 
-/* Estilo para el elemento direccion dentro del header con ancho y altura del 50%. */
-header .direccion {
-    position: center;
-    width: 50%;
-    height: 50px;
-}
-
-/* Estilo para el elemento inicio con ancho del 50% pero contiene un error 
-   en la altura (debería ser 50px en lugar de 50x). */
-.inicio {
-    position: left;
-    width: 50%;
-    height: 50px;
-}
-
-/* Configura la categoría con ancho del 100%, máximo de 1000px, centrado
-   y fondo color marrón. */
-.categoria {
+header  .menu a{ 
+    /* el color se va adar a las etiquetas a que serian texto*/
+    color: aliceblue;
+    /*el texto dentro de las etiquetas notendra ninguna decoracion*/ 
+    text-decoration: none;
+    /*ancho de los elementos dentro de este contendor sera de 100%*/
     width: 100%;
-    height: 50px;
-    max-width: 1000px;
-    text-align: center;
-    margin: auto;
-    overflow: hidden;
-    background-color: brown;
+    /*aqui definimos la altura de los elementos en a*/
+    height: 100%;
+    /*los es pacios en pixeles que ocupara las etiquetas a*/
+    font-size: 20px;
+    /*tamaño de la tipografia*/
+    font-weight: 700;
+    /*margenes*/
+    margin: 40px 10px;
+    position: relative;
 }
 
-/* Define el estilo para el elemento fruto con ancho del 50% y máximo de 500px. 
-   Tiene fondo azul claro. */
-.fruto {
-    width: 50%;
-    height: 50px;
-    max-width: 500px;
-    text-align: center;
-    margin: auto;
-    overflow: hidden;
-    background-color: lightblue;
+/*pesudoclase para las etiquetas a*/
+header .menu a:hover{
+    color: #255711;
+    text-decoration: underline;
 }
 
-/* Configuración de los productos: fondo con imagen fija y que cubre completamente. */
-.productos {
-    background: url(../img/Vivero-Potosi-Organica-9.webp);
-    background-size: cover;
-    background-attachment: center fixed;
+header .entrada{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+}
+
+header .entrada .nombre{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+header .entrada .texto{
+    font-weight: 400;
+    font-size: 40px;
+    font-style: italic;
+    text-align: right;
+
+}
+header .texto h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/*EStilos del main*/
+
+main{
+    background: url('../img/fondo-verde-claro-de-papel-textura-alta-calidad-en-extremadamente-resoluci-n-foto-154282110.webp');
+    background-repeat: repeat;
+    height: 650px;
+}
+
+.main .menu{
+    padding-top: 5px;
+    margin-bottom: 50px; 
+}
+
+.main .menu .articulo{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 80px;
+    border: 1px solid #03040f;
+}
+
+.main .menu .articulo:hover{
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+
+.main .menu .producto{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fffdfd;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main .menu article{
+    width: 100%;
+    /* el float hace que los elementos se alineen a la izquierda o derecha del contenedor*/
+    float: right;
+    padding: 10px;
+}
+
+.main .menu .nombre{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fffdfd;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main .otros{
+    float: left;
+    width: 100%;
+    padding: -25px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.main .otros .articulo{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #4CAF50;
+    /*border-radius es una propiedad CSS que define el radio de los bordes de un elemento.
+    Se utiliza para crear esquinas redondeadas en los elementos. Por ejemplo, border-radius: 10px; 
+    establece un radio de 10 píxeles en todas las esquinas del elemento.*/
+    border-radius: 80px;
+    /*El border en CSS es una propiedad que define el borde de un elemento*/
+    border: 1px solid #03040f;
+}
+/*peudo clase*/
+.main .otros .articulo:hover{
+    background-color: #3e8e41;
+    cursor: pointer;
+}
+.main .otros .producto{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fffdfd;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main .otros article{
+    width: 100%;
+    float: right;
+    padding: 10px;
+}
+
+.main .otros .nombre{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fffdfd;
+    text-decoration: none;
+    text-align: center;
+}
+/* fin del main*/
+/*seccion de informacion*/
+.info{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: bisque;
+}
+.info .menu2 .nombre{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+
 }
