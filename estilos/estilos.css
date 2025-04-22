@@ -170,6 +170,7 @@ main{
     color: #fffdfd;
     text-decoration: none;
     text-align: center;
+    
 }
 
 .main .menu article{
@@ -180,6 +181,13 @@ main{
     padding: 10px;
 }
 
+img{
+    width: 200px;
+    height: 200px; 
+    margin-left: 45%;
+    padding: 10px;
+    
+}
 .main .menu .nombre{
     font-size: 20px;
     font-weight: 700;
