@@ -140,26 +140,27 @@ main{
 }
 
 .main .menu{
+    flex: 1;
     padding-top: 5px;
     margin-bottom: 50px; 
 }
 
 .main .menu .articulo{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     text-align: center;
     margin: 0 auto;
     padding: 20px;
     font-size: 20px;
     font-weight: 700;
     color: #fff;
-    background-color: #4CAF50;
-    border-radius: 80px;
+    background-color: #741758;
+    border-radius: 8px;
     border: 1px solid #03040f;
 }
 
 .main .menu .articulo:hover{
-    background-color: #3e8e41;
+    background-color: #831c9d;
     cursor: pointer;
 }
 
@@ -173,8 +174,9 @@ main{
 
 .main .menu article{
     width: 100%;
+    height: 100%;
     /* el float hace que los elementos se alineen a la izquierda o derecha del contenedor*/
-    float: right;
+    float: left;
     padding: 10px;
 }
 
@@ -195,8 +197,8 @@ main{
 }
 
 .main .otros .articulo{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     text-align: center;
     margin: 0 auto;
     padding: 20px;
@@ -207,7 +209,7 @@ main{
     /*border-radius es una propiedad CSS que define el radio de los bordes de un elemento.
     Se utiliza para crear esquinas redondeadas en los elementos. Por ejemplo, border-radius: 10px; 
     establece un radio de 10 píxeles en todas las esquinas del elemento.*/
-    border-radius: 80px;
+    border-radius: 8px;
     /*El border en CSS es una propiedad que define el borde de un elemento*/
     border: 1px solid #03040f;
 }
